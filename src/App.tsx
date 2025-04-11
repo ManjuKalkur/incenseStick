@@ -5,6 +5,11 @@ import P1 from '../src/assets/P1.jpg'
 import P2 from '../src/assets/P2.jpg'
 import P3 from '../src/assets/P3.jpeg'
 
+import logo from '../src/assets/phoshak-logo.png'
+import landing from '../src/assets/Landing1.png'
+
+
+
 const products = [
   {
     id: 1,
@@ -105,7 +110,7 @@ function App() {
               </button>
               <div className="flex items-center">
                 {/* <Flame className="h-8 w-8 text-amber-600" /> */}
-                <img src='src\assets\phoshak-logo.png'  width={200}></img>
+                <img src={logo}  width={200}></img>
                 {/* <span className="text-xl font-semibold ml-2 text-amber-900">Divine Agarbatti</span> */}
               </div>
             </div>
@@ -148,7 +153,7 @@ function App() {
         <div className="absolute inset-0">
           <img
             className="w-full h-screen "
-            src='src\assets\Landing1.png'
+            src={landing}
             // src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=2000"
             alt="Agarbatti background"
           />
