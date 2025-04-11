@@ -91,9 +91,9 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
 
-  const addToCart = () => {
-    setCartCount(prev => prev + 1);
-  };
+  // const addToCart = () => {
+  //   setCartCount(prev => prev + 1);
+  // };
 
   return (
     <div className="min-h-screen bg-[#faf6f1]">
@@ -237,10 +237,10 @@ function App() {
                     Rs{product.price}
                   </span>
                   <button
-                    onClick={addToCart}
+                    // onClick={addToCart}
                     className="px-4 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition-colors duration-300"
                   >
-                    Add to Cart
+                    Buy now
                   </button>
                 </div>
               </div>
@@ -326,8 +326,9 @@ function App() {
               <p className="text-amber-300 mb-4">
                 Subscribe for sacred updates and special offers.
               </p>
-              <div className='x'>
-              <Facebook/> <Instagram/> 
+              <div>
+              <Facebook></Facebook>  
+             <Instagram/> 
               </div>
               {/* <div className="flex">
                 <input
